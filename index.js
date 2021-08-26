@@ -257,3 +257,4 @@ let outputLines = header.concat(convertObjectsToGCodeLines(newChunkOrder), tail)
 
 // save to file
 fs.writeFileSync(outputFile, outputLines, { encoding: 'utf-8' });
+console.log('Wrote output to ', outputFile);
